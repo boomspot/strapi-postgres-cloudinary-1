@@ -1,33 +1,41 @@
 {
-  "name": "strapi-postgres-cloudinary",
-  "private": true,
+  "name": "my-strapi-project",
   "version": "0.1.0",
+  "private": true,
   "description": "A Strapi application",
   "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.1.7",
-    "@strapi/plugin-users-permissions": "4.1.7",
-    "@strapi/plugin-i18n": "4.1.7",
-    "@strapi/provider-upload-cloudinary": "4.1.7",
-    "pg": "^8.7.0",
-    "pg-connection-string": "^2.5.0",
-    "sqlite3": "latest"
+    "@strapi/plugin-cloud": "5.22.0",
+    "@strapi/plugin-users-permissions": "5.22.0",
+    "@strapi/strapi": "5.22.0",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "5dbc738b-6a52-4a78-a46c-eed70aa61c15"
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   },
   "engines": {
-    "node": ">=10.0.0",
+    "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "42bee71f-e184-43ba-bbbc-4eded7f5fa81",
+    "installId": "2057d8d0a390922c338102eb16331b76406f33aefaa3c424f74ef76644732c12"
+  }
 }
