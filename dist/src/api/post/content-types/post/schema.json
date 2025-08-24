@@ -84,6 +84,25 @@
                 "videos",
                 "audios"
             ]
+        },
+        "author": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::author.author"
+        },
+        "category": {
+            "type": "enumeration",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "enum": [
+                "Beauty",
+                "Fitness",
+                "Wellness",
+                "InsideVagaro"
+            ]
         }
     }
 }
